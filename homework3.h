@@ -1,8 +1,8 @@
 /*
  * homework3.h
  *
- *  Created on:
- *      Author:
+ *  Created on: 2/29/2020
+ *      Author: Colin Farrell
  */
 
 
@@ -17,10 +17,14 @@ void changeLaunchpadLED2(unsigned int count);
 // This function indexes a count value to an LED color on the Boosterpack LED.
 void changeBoosterpackLED(unsigned int count);
 // This function serves as a debounce state machine for Boosterpack button S1
-bool fsmBoosterpackButtonS1(unsigned int buttonhistory);
+bool fsmBoosterpackButtonS1(unsigned char buttonhistory);
 
 
 // TODO: Define any constants that are local to homework.c using #define
+#define UNPRESSED   0xFF
+#define PRESSED     0x00
 
+enum Color {OFF, RED, GREEN, YELLOW, BLUE, PURPLE, CYAN, WHITE};
+enum ButtonState {UP, DOWN};
 
 #endif /* HOMEWORK3_H_ */

@@ -1,8 +1,8 @@
 /*
  * myGPIO.h
  *
- *  Created on:
- *      Author:
+ *  Created on: 2/29/2020
+ *      Author: Colin Farrell
  *
  */
 
